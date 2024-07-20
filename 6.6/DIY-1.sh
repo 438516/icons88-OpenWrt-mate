@@ -9,7 +9,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 git clone https://github.com/TraderWukong/luci-app-poweroff.git package/luci-app-poweroff
 
 # 添加Opentomcat主题
-git clone https://github.com/icons88/luci-theme-opentomcat.git package/luci-theme-opentomcat
+#git clone https://github.com/icons88/luci-theme-opentomcat.git package/luci-theme-opentomcat
 
 # 添加adguardhome插件
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
