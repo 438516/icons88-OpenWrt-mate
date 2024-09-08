@@ -151,9 +151,9 @@ jobs:
         echo "release_tag=${{ env.TAG_TIME }}" >> $GITHUB_OUTPUT
         touch release.txt
         echo "RopWrt-x86_64-内核6.6-passwall版（支持ipv6）" >> release.txt
-        echo "默认地址：100.1.1.1" >> release.txt
+        echo "默认地址：192.168.123.221" >> release.txt
         echo "默认密码：无密码" >> release.txt
-        echo "包含插件：PassWall、SmartDNS、adguardhome、UU游戏加速、Turbo ACC网络加速" >> release.txt
+        echo "包含插件：PassWall、MosDNS、OpenClash、SsrPlus" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: 发布新版固件
