@@ -1,6 +1,6 @@
 # 此脚本用处是：定制个性化参数
 #============================================================================================
-
+./scripts/feeds update -a
 
 # 0-设置主机名
 # sed -i "s/hostname='OpenWrt'/hostname='RopWrt'/g" package/base-files/files/bin/config_generate
