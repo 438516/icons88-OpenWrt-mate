@@ -16,11 +16,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 git clone https://github.com/TraderWukong/luci-app-poweroff.git package/luci-app-poweroff
 
 # 添加infinityfreedom主题
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
 git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-neobird
-scripts/feeds update infinityfreedomng
 scripts/feeds update neobird
-scripts/feeds install luci-theme-infinityfreedom-ng
 scripts/feeds install luci-theme-neobird
 
 # 添加adguardhome插件
