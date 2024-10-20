@@ -1,7 +1,14 @@
 # 此脚本用处是：添加第三方插件
 #=========================================================================================================================
+./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/utils/v2dat
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
-./scripts/feeds update -a
+
+
+#./scripts/feeds update -a
 # 添加ShadowSocksR Plus+插件
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
