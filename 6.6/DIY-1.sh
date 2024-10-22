@@ -20,6 +20,10 @@ git clone https://github.com/thinktip/luci-theme-neobird.git package/luci-theme-
 scripts/feeds update neobird
 scripts/feeds install luci-theme-neobird
 
+#添加filebrowser文件管理插件
+git clone https://github.com/xiaozhuai/luci-app-filebrowser package/luci-app-filebrowser
+make package/luci-app-filebrowser/compile
+
 # 添加adguardhome插件
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 
@@ -31,4 +35,4 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 
 #添加mihomo插件
-echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
+# echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
