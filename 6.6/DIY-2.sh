@@ -10,7 +10,7 @@ sed -i "s/hostname='OpenWrt'/hostname='N4505'/g" package/base-files/files/bin/co
 sed -i 's/bootstrap/neobird/g' ./feeds/luci/collections/luci/Makefile
 
 # 2-设置管理地址
-sed -i 's/192.168.1.1/192.168.123.21/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.220/g' package/base-files/files/bin/config_generate
 
 # 3-编译内核版本
 sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.6/g' ./target/linux/x86/Makefile
